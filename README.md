@@ -7,7 +7,7 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 <details>
 <summary><b>Option A: Pre-compiled Version (Recommended)</b></summary>
 
-1. Download the in this repository provided ZIP file for your operating system and processor architecture.
+1. Download the appropriate ZIP file for your operating system and processor architecture from the [distributions](distributions) directory.
 2. Extract the contents to a local directory.
 3. Execution: Follow the platform-specific instructions below to launch the application:
 
