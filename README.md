@@ -4,7 +4,9 @@ Please read it carefully, and thank you for your time and expert insights :)
 # 1. Getting Started
 
 The application is a JVM-based desktop tool developed with Kotlin and Compose Desktop. The setup *should* be easy.
-## **Option A: Pre-compiled Version**
+<details>
+<summary><b>Option A: Pre-compiled Version (Recommended)</b></summary>
+
 1. Download the in this repository provided ZIP file for your operating system and processor architecture.
 2. Extract the contents to a local directory.
 3. Execution: Follow the platform-specific instructions below to launch the application:
@@ -24,23 +26,30 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 * Navigate into the extracted EPA Visualizer folder.
 * Double-click `EPA Visualizer.exe` to start.
 
-## **Option B: Building from Source**
+</details>
+
+<details>
+<summary><b>Option B: Building from Source</b></summary>
+
 If you prefer to build the application yourself, you will need a JDK installed:
 1. **Clone** the [epa-visualizer repository](https://github.com/linde9821/epa-visualizer): `git clone git@github.com:linde9821/epa-visualizer.git`
 2. **Navigate** to the root folder.
 3. **Execute** the command: `./gradlew run`
 > _Note: Initial building may take a few minutes as dependencies are downloaded._
+</details>
 
 ## Load the event log and begin the study:
 
-1. **Extract the Data**: Download and unzip `BPI Challenge 2020_ International Declarations.zip`.
+1. **Extract the Data**: Download and unzip [User Study Project](User%20Study%20Project.zip).
 2. **Launch the App**: Open the EPA Visualizer.
 3. **Open Project**: Click the **Open Project** button on the welcome screen.
 4. **Select Folder**: In the file browser, select the directory where you extracted the ZIP file.
 
-After that the application will create the epa and render the visualization. You can now start the study.
-
 **Need Help?** If you encounter setup issues, please contact me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@student.hu-berlin.de).
+
+After that, the application will generate the EPA and render the visualisation.
+You can then begin your study.
+If you have any problems using some of the features, take a look at the [slide deck](Slide%20Deck.pdf), where they are explained in more detail.
 
 # 2. Background: Extended Prefix Automata (EPA)
 
@@ -54,14 +63,12 @@ The Extended Prefix Automaton (EPA) is a specialized state-based representation 
 
 The **EPA Visualizer** allows you to transform raw `.xes` event logs into interactive visualizations for performance and structural analysis.
 
-## **Quick Tips for Navigation**
+## Quick Tips for Navigation
 **Visualization**: Once a project is open, the application will render the **EPA-Visualization** automatically.
 **Interacting**: You can zoom in/out, pan the view, or click on individual states to highlight the path from the root.
-**Features**: To interact with the different  featuers use the tabs bar on the left side
+**Features**: To interact with the different features use the tabs bar on the left side
 
-For anything else please take a look at the Slide Deck (PDF).
-
-**Key Components**
+## **Key Components**
 - **Tabs-Bar:** Manage multiple filtered versions of the same project simultaneously.
 - **Feature Selection:** Access tools for filtering, layout configuration, and animation.
 - **Visualization Menu:** The primary area where you interact with the rendered EPA.
