@@ -1,4 +1,5 @@
-This README is designed to guide you through the setup and provide the necessary background to participate in the user study for the **EPA Visualizer**. Thank you for your time and expert insights :)
+This README is designed to guide you through the setup and provide the necessary background to participate in the user study for the **EPA Visualizer**.
+Please read it carefully, and thank you for your time and expert insights :)
 
 # 1. Getting Started
 
@@ -11,7 +12,7 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 ### Linux:
 * Navigate to the EPA Visualizer/bin directory.
 * Run the EPA Visualizer executable from your terminal or by double-clicking it.
-* You may need to ensure it has execution permissions first: chmod +x bin/"EPA Visualizer".
+* You may need to ensure it has execution permissions first: `chmod +x bin/"EPA Visualizer"`.
 
 ### macOS:
 * Open the app folder and locate EPA Visualizer.app.
@@ -39,7 +40,7 @@ If you prefer to build the application yourself, you will need a JDK installed:
 
 After that the application will create the epa and render the visualization. You can now start the study.
 
-**Need Help?** If you encounter setup issues, please contact me [Moritz Lindner](mailto:moritz.lindner@student.hu-berlin.de).
+**Need Help?** If you encounter setup issues, please contact me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@student.hu-berlin.de).
 
 # 2. Background: Extended Prefix Automata (EPA)
 
