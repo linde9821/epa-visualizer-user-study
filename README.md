@@ -16,7 +16,7 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 * Run the EPA Visualizer executable from your terminal or by double-clicking it.
 * You may need to ensure it has execution permissions first: `chmod +x bin/"EPA Visualizer"`.
 
-> [!IMPORTANT]
+> _Note:_
 > Graphics & OpenGL: The application uses hardware acceleration via Skia. 
 > Please ensure your graphics drivers are up to date and support OpenGL.
 > Unlike Windows and macOS, where standardized graphics drivers are typically bundled with the OS or vendor updates, Linux environments vary significantly in how they handle hardware acceleration. 
