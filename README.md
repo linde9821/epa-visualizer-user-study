@@ -39,6 +39,7 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 
 If you prefer to build the application yourself, you will need a JDK installed:
 1. **Clone** the [epa-visualizer repository](https://github.com/linde9821/epa-visualizer): `git clone git@github.com:linde9821/epa-visualizer.git`
+2. **Set up Git LFS**: This repository uses Git Large File Storage. Ensure you have Git LFS installed and run the following in the project root to pull the actual data files: `git lfs install && git lfs pull`
 2. **Navigate** to the root folder.
 3. **Execute** the command: `./gradlew run`
 > _Note: Initial building may take a few minutes as dependencies are downloaded._
