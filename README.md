@@ -1,13 +1,24 @@
-This README is designed to guide you through the setup and provide the necessary background to participate in the user study for the **EPA Visualizer**.
+This README is designed to guide you through the setup and provide the necessary background to participate in the user
+study for the **EPA Visualizer**.
 Please read it carefully, and thank you for your time and expert insights :)
 
 # 1. Getting Started
-
+## 1.1 Run the application
 The application is a JVM-based desktop tool developed with Kotlin and Compose Desktop. The setup *should* be easy.
+
+**Need Help?** If you encounter setup issues, please contact
+me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@student.hu-berlin.de).
+
 <details>
 <summary><b>Option A: Pre-compiled Version (Recommended)</b></summary>
 
-1. Download the appropriate ZIP file for your operating system and processor architecture from the [distributions](distributions) directory.
+1. Download the appropriate ZIP file for your operating system and processor architecture:
+
+|     | linux                                                                                                                          | macOs                                                                                                                              | Windows                                                                                                                          |
+|-----|--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| arm | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-arm64.zip?download=) | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-arm64.zip?download=)     | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-arm64.zip?download=) |
+| x64 | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-x64.zip?download=)   | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-intel-x64.zip?download=) | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-x64.zip?download=)   |
+
 2. Extract the contents to a local directory.
 3. Execution: Follow the platform-specific instructions below to launch the application:
 
