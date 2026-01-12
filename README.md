@@ -74,7 +74,7 @@ If you prefer to build the application yourself, you will need a JDK installed:
 > _Note: Initial building may take a few minutes as dependencies are downloaded._
 </details>
 
-## 1.2 Load the event log and begin the study:
+## 1.2 Load the event log and begin the study
 
 1. **Extract the Data**: Download and unzip [User Study Project](User%20Study%20Project.zip).
 2. **Launch the App**: Open the EPA Visualizer.
