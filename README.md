@@ -17,18 +17,28 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 * You may need to ensure it has execution permissions first: `chmod +x bin/"EPA Visualizer"`.
 
 > _Note:_
-> Graphics & OpenGL: The application uses hardware acceleration via Skia. 
+> Graphics & OpenGL: The application uses hardware acceleration via Skia.
 > Please ensure your graphics drivers are up to date and support OpenGL.
-> Unlike Windows and macOS, where standardized graphics drivers are typically bundled with the OS or vendor updates, Linux environments vary significantly in how they handle hardware acceleration. 
-> Ensuring the correct OpenGL libraries (such as libgl1) are installed is often a manual requirement on some distributions to ensure the UI renders correctly.
+> Unlike Windows and macOS, where standardized graphics drivers are typically bundled with the OS or vendor updates,
+> Linux environments vary significantly in how they handle hardware acceleration.
+> Ensuring the correct OpenGL libraries (such as libgl1) are installed is often a manual requirement on some
+> distributions to ensure the UI renders correctly.
 
 ### macOS:
-* Open the app folder and locate EPA Visualizer.app.
+
+* Open the app folder and locate `EPA Visualizer.app` and run it.
+* If you get a warning stating the "App is damaged and can't be opened" please follow the steps described in the note below.  
+
 > _Note:_
-> _Because the app is not currently notarized by Apple, you may need to Right-click (Control-click) the app icon, select Open, and then click Open again in the security dialog to bypass the "Unidentified Developer" warning._
-> _If this is not possible please use Option B described below._ 
+> Because the application, it is not notarized by Apple you may receive an error stating the "App is damaged and can't
+> be opened,".
+> run the following command in your Terminal to bypass the security flag:
+> `sudo xattr -cr /path/to/EPA\ Visualizer.app`
+> Once executed, you can open the app normally.
+> _If this is not possible please use Option B described below._
 
 ### Windows:
+
 * Navigate into the extracted EPA Visualizer folder.
 * Double-click `EPA Visualizer.exe` to start.
 
@@ -38,14 +48,18 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 <summary><b>Option B: Building from Source</b></summary>
 
 If you prefer to build the application yourself, you will need a JDK installed:
-1. **Clone** the [epa-visualizer repository](https://github.com/linde9821/epa-visualizer): `git clone git@github.com:linde9821/epa-visualizer.git`
-2. **Set up Git LFS**: This repository uses Git Large File Storage. Ensure you have Git LFS installed and run the following in the project root to pull the actual data files: `git lfs install && git lfs pull`
+
+1. **Clone** the [epa-visualizer repository](https://github.com/linde9821/epa-visualizer):
+   `git clone git@github.com:linde9821/epa-visualizer.git`
+2. **Set up Git LFS**: This repository uses Git Large File Storage. Ensure you have Git LFS installed and run the
+   following in the project root to pull the actual data files: `git lfs install && git lfs pull`
 2. **Navigate** to the root folder.
 3. **Execute** the command: `./gradlew run`
+
 > _Note: Initial building may take a few minutes as dependencies are downloaded._
 </details>
 
-## Load the event log and begin the study:
+## 1.2 Load the event log and begin the study:
 
 1. **Extract the Data**: Download and unzip [User Study Project](User%20Study%20Project.zip).
 2. **Launch the App**: Open the EPA Visualizer.
