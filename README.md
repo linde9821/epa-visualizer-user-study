@@ -76,7 +76,7 @@ If you prefer to build the application yourself, you will need a JDK installed:
 
 ## 1.2 Load the event log and begin the study
 
-1. **Extract the Data**: Download and unzip [User Study Project](User%20Study%20Project.zip).
+1. **Extract the Data**: Download and unzip <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/User%20Study%20Project.zip?download=" target="_blank">User Study Project.zip</a>.
 2. **Launch the App**: Open the EPA Visualizer.
 3. **Open Project**: Click the **Open Project** button on the welcome screen.
 4. **Select Folder**: In the file browser, select the directory where you extracted the ZIP file.
