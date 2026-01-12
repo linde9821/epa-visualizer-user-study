@@ -3,7 +3,9 @@ study for the **EPA Visualizer**.
 Please read it carefully, and thank you for your time and expert insights :)
 
 # 1. Getting Started
+
 ## 1.1 Run the application
+
 The application is a JVM-based desktop tool developed with Kotlin and Compose Desktop. The setup *should* be easy.
 
 **Need Help?** If you encounter setup issues, please contact
@@ -14,10 +16,10 @@ me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@
 
 1. Download the appropriate ZIP file for your operating system and processor architecture:
 
-|     | linux                                                                                                                          | macOs                                                                                                                              | Windows                                                                                                                          |
-|-----|--------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| arm | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-arm64.zip?download=) | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-arm64.zip?download=)     | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-arm64.zip?download=) |
-| x64 | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-x64.zip?download=)   | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-intel-x64.zip?download=) | [download](https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-x64.zip?download=)   |
+|     | linux                                                                                                                                                     | macOs                                                                                                                                                         | Windows                                                                                                                                                     |
+|-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| arm | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-arm64.zip?download=" target="_blank">download</a> | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-arm64.zip?download=" target="_blank">download</a>     | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-arm64.zip?download=" target="_blank">download</a> |
+| x64 | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-x64.zip?download=" target="_blank">download</a>   | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-intel-x64.zip?download=" target="_blank">download</a> | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-x64.zip?download=" target="_blank">download</a>   |
 
 2. Extract the contents to a local directory.
 3. Execution: Follow the platform-specific instructions below to launch the application:
@@ -39,7 +41,8 @@ me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@
 ### macOS:
 
 * Open the app folder and locate `EPA Visualizer.app` and run it.
-* If you get a warning stating the "App is damaged and can't be opened" please follow the steps described in the note below.  
+* If you get a warning stating the "App is damaged and can't be opened" please follow the steps described in the note
+  below.
 
 > _Note:_
 > Because the application, it is not notarized by Apple you may receive an error stating the "App is damaged and can't
@@ -61,7 +64,7 @@ me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@
 
 If you prefer to build the application yourself, you will need a JDK installed:
 
-1. **Clone** the [epa-visualizer repository](https://github.com/linde9821/epa-visualizer):
+1. **Clone** the <a href="https://github.com/linde9821/epa-visualizer" target="_blank">epa-visualizer repository</a>:
    `git clone git@github.com:linde9821/epa-visualizer.git`
 2. **Set up Git LFS**: This repository uses Git Large File Storage. Ensure you have Git LFS installed and run the
    following in the project root to pull the actual data files: `git lfs install && git lfs pull`
