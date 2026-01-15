@@ -76,7 +76,9 @@ If you prefer to build the application yourself, you will need a JDK installed:
 
 ## 1.2 Load the event log and begin the study
 
-1. **Extract the Data**: Download and unzip <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/User%20Study%20Project.zip?download=" target="_blank">User Study Project.zip</a>.
+1. **Extract the Data**: Download and
+   unzip <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/User%20Study%20Project.zip?download=" target="_blank">
+   User Study Project.zip</a>.
 2. **Launch the App**: Open the EPA Visualizer.
 3. **Open Project**: Click the **Open Project** button on the welcome screen.
 4. **Select Folder**: In the file browser, select the directory where you extracted the ZIP file.
@@ -91,15 +93,29 @@ explained in more detail.
 
 # 2. Background: Extended Prefix Automata (EPA)
 
-The Extended Prefix Automaton (EPA) is a specialized state-based representation used to analyze trace variants in large,
-complex event logs.
+The Extended Prefix Automaton (EPA) is a specialized, state-based representation that is used to analyze trace variants
+in large, complex event logs.
 
-- The Concept: Traditional process models can become cluttered ("spaghetti models") when dealing with thousands of
-  variants. The EPA encodes these variants by representing them as prefixes in an automaton.
-- The Visualization: This application provides an interactive interface to explore these automata using various
-  interactive layouts, filter options, animations and statistics.
-- The Objective: The goal is to minimize visual clutter while supporting deep-dive analysis into specific process
-  behaviors, such as bottlenecks or infrequent variants.
+Core Concepts:
+
+- The Problem: Traditional process models often become cluttered and difficult to understand when dealing with thousands
+  of process variants.
+- An EPA encodes these variants as paths in a graph. This ensures that every process execution (trace) can be reproduced
+  exactly without losing information through abstraction.
+- States & Transitions:
+    - States (Nodes): Each node represents an activity that is reached at a specific point in the process.
+    - Root State: All process paths originate from a single "root" entry state.
+    - Transitions (Edges): Lines between states represent the flow of activities in a variant.
+- Partitions & Branching:
+    - Shared Prefixes: Different process variants often have the same initial activities. These activities are
+      visualized as a single joint path.
+    - A "branch" is created in the automaton when process variants diverge.
+    - Partitions: Each branch, or unique sequence of activities, is assigned to a specific partition. The total number
+      of partitions in the EPA is equal to the number of unique process variants observed in the data.
+
+This application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such as
+performance bottlenecks reguarding variants. With various interactive layouts, filters, and animations, you can explore
+the underlying complexity of your business processes.
 
 # 3. Application Overview
 
