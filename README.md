@@ -114,7 +114,7 @@ Core Concepts:
       of partitions in the EPA is equal to the number of unique process variants observed in the data.
 
 This application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such as
-performance bottlenecks reguarding variants. With various interactive layouts, filters, and animations, you can explore
+performance bottlenecks regarding variants. With various interactive layouts, filters, and animations, you can explore
 the underlying complexity of your business processes.
 
 # 3. Application Overview
