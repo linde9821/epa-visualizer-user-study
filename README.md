@@ -81,7 +81,7 @@ If you prefer to build the application yourself, you will need a JDK installed:
    User Study Project.zip</a>.
 2. **Launch the App**: Open the EPA Visualizer.
 3. **Open Project**: Click the **Open Project** button on the welcome screen.
-4. **Select Folder**: In the file browser, select the directory where you extracted the ZIP file.
+4. **Select Directory**: In the file browser, select the **directory** of the extracted ZIP file.
 
 **Need Help?** If you encounter setup issues, please contact
 me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@student.hu-berlin.de).
