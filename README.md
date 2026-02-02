@@ -89,20 +89,15 @@ me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@
 After that, the application will generate the EPA and render the visualization.
 Please read "2. Background: Extended Prefix Automata (EPA)" to get an explanation of what the application is actually
 showing.
-You can then begin your study.
+You can then begin the study.
 
 # 2. Background: Extended Prefix Automata (EPA)
 
-The Extended Prefix Automaton (EPA) is a specialized, state-based representation that is used to analyze trace variants
-in large, complex event logs:
+The Extended Prefix Automaton (EPA) is a specialized, state-based representation that is used to analyze process execution variants in large, complex event logs:
 
-- The Problem: Traditional visualizations don't depict the whole landscape of process variants.
-- The EPA encodes these variants as paths in a graph. This ensures that every process execution (trace) can be
-  reproduced
-  exactly without losing information through abstraction. Our applications visualizes this EPA.
-- The application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such
-  as performance bottlenecks regarding variants. With various interactive layouts, filters, and animations, you can
-  explore the underlying complexity of your business processes.
+- The Problem: Traditional visualizations often focus on individual process variants, failing to depict the entire landscape of variants.
+- The EPA encodes these variants as paths in a graph. This ensures that every trace (process execution) can be reproduced exactly without losing information through abstraction. Our application visualizes this EPA in order to show the existing variant.
+- The application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such as performance bottlenecks related to variants. With its various interactive layouts, filters, and animations, the application allows you to explore the underlying complexity of your business processes.
 
 Core Concepts:
 
@@ -114,8 +109,8 @@ Core Concepts:
     - Shared Prefixes: Different process variants often have the same initial activities. These activities are
       visualized as a single joint path.
     - A "branch" is created in the automaton when process variants diverge.
-    - Partitions: Each branch, or unique sequence of activities, is assigned to a specific partition. The total number
-      of partitions in the EPA is equal to the number of unique process variants observed in the data.
+    - Partitions: Each branch, or unique sequence of activities, is assigned to a specific partition. The total number of partitions in the EPA is equal to the number of unique process variants observed in the data.
 
-We have [a video explaining the usage of the core feature](www.youtube.com) available for you.
+We have [an explanatory video](www.youtube.com) about how to use the core feature available for you.
 There is also a [slide deck](Slide%20Deck.pdf) explaining all features in a written form.
+The questions in the user study are designed so that you won't get lost.
