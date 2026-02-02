@@ -86,22 +86,26 @@ If you prefer to build the application yourself, you will need a JDK installed:
 **Need Help?** If you encounter setup issues, please contact
 me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@student.hu-berlin.de).
 
-After that, the application will generate the EPA and render the visualisation.
+After that, the application will generate the EPA and render the visualization.
+Please read "2. Background: Extended Prefix Automata (EPA)" to get an explanation of what the application is actually
+showing.
 You can then begin your study.
-If you have any problems using some of the features, take a look at the [slide deck](Slide%20Deck.pdf), where they are
-explained in more detail.
 
 # 2. Background: Extended Prefix Automata (EPA)
 
 The Extended Prefix Automaton (EPA) is a specialized, state-based representation that is used to analyze trace variants
-in large, complex event logs.
+in large, complex event logs:
+
+- The Problem: Traditional visualizations don't depict the whole landscape of process variants.
+- The EPA encodes these variants as paths in a graph. This ensures that every process execution (trace) can be
+  reproduced
+  exactly without losing information through abstraction. Our applications visualizes this EPA.
+- The application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such
+  as performance bottlenecks regarding variants. With various interactive layouts, filters, and animations, you can
+  explore the underlying complexity of your business processes.
 
 Core Concepts:
 
-- The Problem: Traditional process models often become cluttered and difficult to understand when dealing with thousands
-  of process variants.
-- An EPA encodes these variants as paths in a graph. This ensures that every process execution (trace) can be reproduced
-  exactly without losing information through abstraction.
 - States & Transitions:
     - States (Nodes): Each node represents an activity that is reached at a specific point in the process.
     - Root State: All process paths originate from a single "root" entry state.
@@ -113,36 +117,5 @@ Core Concepts:
     - Partitions: Each branch, or unique sequence of activities, is assigned to a specific partition. The total number
       of partitions in the EPA is equal to the number of unique process variants observed in the data.
 
-This application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such as
-performance bottlenecks regarding variants. With various interactive layouts, filters, and animations, you can explore
-the underlying complexity of your business processes.
-
-# 3. Application Overview
-
-The **EPA Visualizer** allows you to transform raw `.xes` event logs into interactive visualizations for performance and
-structural analysis.
-
-## Quick Tips for Navigation
-
-**Visualization**: Once a project is open, the application will render the **EPA-Visualization** automatically.
-**Interacting**: You can zoom in/out, pan the view, or click on individual states to highlight the path from the root.
-**Features**: To interact with the different features use the tabs bar on the left side
-
-## **Key Components**
-
-- **Tabs-Bar:** Manage multiple filtered versions of the same project simultaneously.
-- **Feature Selection:** Access tools for filtering, layout configuration, and animation.
-- **Visualization Menu:** The primary area where you interact with the rendered EPA.
-- **State Details:** Click any state in the visualization to view specific metrics like Cycle Time, Frequency, and path
-  history.
-  **Tools**:
-- **Interactive Filtering:** Apply **Chain Compression** (folding sequential states $A \rightarrow B \rightarrow C$ into
-  a single $ABC$ node), Frequency filters, or Activity exclusions
-- **Layouts**: Switch between several specialized layouts, including:
-    - Walker Layout: For hierarchical structure.
-    - Angle-Similarity, Time Depth Radial Layout: For identifying similar process variants by angle and cycle time by
-      distance.
-    - Clustering Layouts: For macro-level grouping of states or partitions.
-- **Animation:** Play back the entire event log or individual traces to observe flow dynamics and bursts over time.
-- **Statistics:** Compare the original "Root EPA" metrics against your filtered views to measure data reduction and
-  impact.
+We have [a video explaining the usage of the core feature](www.youtube.com) available for you.
+There is also a [slide deck](Slide%20Deck.pdf) explaining all features in a written form.
