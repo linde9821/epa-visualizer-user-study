@@ -111,6 +111,6 @@ Core Concepts:
     - A "branch" is created in the automaton when process variants diverge.
     - Partitions: Each branch, or unique sequence of activities, is assigned to a specific partition. The total number of partitions in the EPA is equal to the number of unique process variants observed in the data.
 
-We also have [an explanatory video / tutorial](https://www.youtube.com) on how to use the core feature of the applications.
+We also have [an explanatory video / tutorial](https://youtu.be/2FBBSTOqLZ4) on how to use the core feature of the applications.
 There is also a [slide deck](Slide%20Deck.pdf) explaining all features in a written form.
 The questions in the user study are designed so that you won't get lost.
