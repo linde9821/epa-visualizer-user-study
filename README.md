@@ -16,10 +16,10 @@ me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@
 
 1. Download the appropriate ZIP file for your operating system and processor architecture:
 
-|         | linux                                                                                                                                                     | macOs                                                                                                                                                         | Windows                                                                                                                                                     |
-|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **arm** | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-arm64.zip?download=" target="_blank">download</a> | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-arm64.zip?download=" target="_blank">download</a>     | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-arm64.zip?download=" target="_blank">download</a> |
-| **x64** | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/linux-x64.zip?download=" target="_blank">download</a>   | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/macos-intel-x64.zip?download=" target="_blank">download</a> | <a href="https://github.com/linde9821/epa-visualizer-user-study/raw/refs/heads/main/distributions/windows-x64.zip?download=" target="_blank">download</a>   |
+|         | linux                                                                                                                                            | macOs                                                                                                                                                | Windows                                                                                                                                            |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **arm** | <a href="https://github.com/linde9821/epa-visualizer/releases/download/masterarbeit-release-1.19.3/linux-arm64.zip" target="_blank">download</a> | <a href="https://github.com/linde9821/epa-visualizer/releases/download/masterarbeit-release-1.19.3/macos-arm64.zip" target="_blank">download</a>     | <a href="https://github.com/linde9821/epa-visualizer/releases/download/masterarbeit-release-1.19.3/windows-arm64.zip" target="_blank">download</a> |
+| **x64** | <a href="https://github.com/linde9821/epa-visualizer/releases/download/masterarbeit-release-1.19.3/linux-x64.zip" target="_blank">download</a>   | <a href="https://github.com/linde9821/epa-visualizer/releases/download/masterarbeit-release-1.19.3/macos-intel-x64.zip" target="_blank">download</a> | <a href="https://github.com/linde9821/epa-visualizer/releases/download/masterarbeit-release-1.19.3/windows-x64.zip" target="_blank">download</a>   |
 
 2. Extract the contents to a local directory.
 3. Execution: Follow the platform-specific instructions below to launch the application:
@@ -93,11 +93,17 @@ You can then begin the study.
 
 # 2. Background: Extended Prefix Automata (EPA)
 
-The Extended Prefix Automaton (EPA) is a specialized, state-based representation that is used to analyze process execution variants in large, complex event logs:
+The Extended Prefix Automaton (EPA) is a specialized, state-based representation that is used to analyze process
+execution variants in large, complex event logs:
 
-- The Problem: Traditional visualizations often focus on individual process variants, failing to depict the entire landscape of variants.
-- The EPA encodes these variants as paths in a graph. This ensures that every trace (process execution) can be reproduced exactly without losing information through abstraction. Our application visualizes this EPA in order to show the existing variant.
-- The application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such as performance bottlenecks related to variants. With its various interactive layouts, filters, and animations, the application allows you to explore the underlying complexity of your business processes.
+- The Problem: Traditional visualizations often focus on individual process variants, failing to depict the entire
+  landscape of variants.
+- The EPA encodes these variants as paths in a graph. This ensures that every trace (process execution) can be
+  reproduced exactly without losing information through abstraction. Our application visualizes this EPA in order to
+  show the existing variant.
+- The application aims to minimize visual clutter while enabling in-depth analysis of specific process behaviors, such
+  as performance bottlenecks related to variants. With its various interactive layouts, filters, and animations, the
+  application allows you to explore the underlying complexity of your business processes.
 
 Core Concepts:
 
@@ -109,8 +115,10 @@ Core Concepts:
     - Shared Prefixes: Different process variants often have the same initial activities. These activities are
       visualized as a single joint path.
     - A "branch" is created in the automaton when process variants diverge.
-    - Partitions: Each branch, or unique sequence of activities, is assigned to a specific partition. The total number of partitions in the EPA is equal to the number of unique process variants observed in the data.
+    - Partitions: Each branch, or unique sequence of activities, is assigned to a specific partition. The total number
+      of partitions in the EPA is equal to the number of unique process variants observed in the data.
 
-We also have [an explanatory video / tutorial](https://youtu.be/2FBBSTOqLZ4) on how to use the core feature of the applications.
+We also have [an explanatory video / tutorial](https://youtu.be/2FBBSTOqLZ4) on how to use the core feature of the
+applications.
 There is also a [slide deck](Slide%20Deck.pdf) explaining all features in a written form.
 The questions in the user study are designed so that you won't get lost.
