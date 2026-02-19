@@ -11,6 +11,8 @@ The application is a JVM-based desktop tool developed with Kotlin and Compose De
 **Need Help?** If you encounter setup issues, please contact
 me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@student.hu-berlin.de).
 
+When the application is running continue below with [Section 1.2 Load the event log and begin the study](#12-load-the-event-log-and-begin-the-study)
+
 <details>
 <summary><b>Option A: Pre-compiled Version (Recommended)</b></summary>
 
