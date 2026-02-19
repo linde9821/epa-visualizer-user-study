@@ -48,8 +48,8 @@ me [Moritz Lindner @ moritz.lindner@student.hu-berlin.de](mailto:moritz.lindner@
 
 > _Note:_
 > Because the application, it is not notarized by Apple you may receive an error stating the "App is damaged and can't
-> be opened,".
-> run the following command in your Terminal to bypass the security flag:
+> be opened" (or similar).
+> Run the following command in your Terminal to bypass the security flag:
 > `sudo xattr -cr /path/to/EPA\ Visualizer.app`
 > Once executed, you can open the app normally.
 > _If this is not possible please use Option B described below._
