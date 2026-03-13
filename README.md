@@ -73,7 +73,7 @@ If you prefer to build the application yourself, you will need a JDK installed:
 2. **Set up Git LFS**: This repository uses Git Large File Storage. Ensure you have Git LFS installed and run the
    following in the project root to pull the actual data files: `git lfs install && git lfs pull`
 2. **Navigate** to the root folder.
-3. **Execute** the command: `./gradlew run`
+3. **Execute** the command: `./gradlew ui:run`
 
 > _Note: Initial building may take a few minutes as dependencies are downloaded._
 </details>
